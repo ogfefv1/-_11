@@ -1,0 +1,167 @@
+body
+ {
+    background: #F9F8FD;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav 
+{
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container 
+{
+    width: 100%;
+    padding-top: calc(70px + 30px);
+    margin: 0;
+}
+
+header 
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 15px 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+.menu 
+{
+    background-color: #d3d3d3;
+    padding: 0px;
+    display: inline-block;
+    border-top: 2px solid #FFFFFF75;
+    border-left: 2px solid #FFFFFF75;
+    box-shadow: 5px 5px 12px #00000035;
+    background: #1c1c1c25; 
+    overflow: visible;
+    backdrop-filter: blur(4px);
+}
+
+.menu ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu > ul > li
+ {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.menu a 
+{
+    color: rgb(26, 22, 29);
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+}
+
+.menu a:hover
+ {
+    background-color: #18566e;
+    color: #ffffff6f;
+}
+
+.menu ul ul 
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1c1c1c25; 
+    backdrop-filter: blur(4px);
+    min-width: 200px;
+    border-top: 2px solid #18566e80;
+    border-left: 2px solid #18566e80;
+    box-shadow: 5px 5px 12px #18566e80;
+    padding: 10px 0;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.menu ul ul li
+ {
+    width: 100%;
+}
+
+.menu ul ul a 
+{
+    padding: 10px 20px;
+}
+
+.menu li:hover > ul 
+{
+    display: block;
+}
+
+.mainPage 
+{
+    width: 75%;
+    padding: 20px;
+    border-top: 2px solid #1c1c1c25;
+    border-left: 2px solid #1c1c1c25;
+    box-shadow: 5px 5px 12px #00000035;
+    background: #12425480;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.image-container 
+{
+    width: min-content;
+    margin: 0px 20px 0px 0px;
+    border-top: 2px solid #1c1c1c;
+    border-left: 2px solid #1c1c1c;
+    box-shadow: 5px 5px 12px #1c1c1c25;
+    background: #12425480;
+    backdrop-filter: blur(4px);
+    padding: 0px;
+    display: inline;
+}
+
+.image-container img 
+{
+    display: block; 
+    width: 200px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.image-container:hover img 
+{
+    transform: scale(1.06);
+}
+
+.about-title
+{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about-content 
+{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
